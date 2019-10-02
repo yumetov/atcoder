@@ -1,0 +1,7 @@
+n = int(input())
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+c = list(map(int, input().split()))
+sum_s = sum(b)
+add_s = sum(c[i1-1] for i1, i2 in zip(a, a[1:]) if i1 + 1 == i2)
+print(sum_s + add_s)
